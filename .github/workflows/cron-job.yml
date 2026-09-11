@@ -1,0 +1,11 @@
+name: Simple Workflow
+
+on: 
+  schedule:
+    - cron: '*/10 * * * *'
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run a one-line script
+        run: echo "Hello, World!"
