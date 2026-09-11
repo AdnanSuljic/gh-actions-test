@@ -3,6 +3,7 @@ name: Simple Workflow
 on: 
   schedule:
     - cron: '*/10 * * * *'
+    workflow_dispatch:
 jobs:
   say-hello:
     runs-on: ubuntu-latest
